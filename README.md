@@ -15,3 +15,10 @@ git remote add origin https://github.com/your-username/your-repo.git
 
 # 推送到GitHub
 git push -u origin master
+
+git lfs install
+git lfs track "*apple.jpeg"  # 假设你上传的是JPEG图片
+git add .gitattributes
+git add .
+git commit -m "Track large files with Git LFS"
+git push -u origin master
